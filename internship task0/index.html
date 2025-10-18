@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <article data-testid="test-profile-card" class="profile-card" aria-label="User Profile Card">
+        <header class="profile-header">
+          <figure class="avatar">
+            <img
+              src="WhatsApp Image 2025-10-08 at 19.56.03_b44c7cfc.jpg"
+              alt="User avatar"
+              data-testid="test-user-avatar"
+            />
+          </figure>
+          <div class="user-info">
+            <h2 data-testid="test-user-name">Adewale Saheed</h2>
+            <p data-testid="test-user-bio">
+              Frontend developer passionate about accessibility, design systems.
+            </p>
+          </div>
+        </header>
+
+        <section class="user-time">
+          <strong>Current Time (ms):</strong>
+          <span data-testid="test-user-time" id="user-time"></span>
+        </section>
+
+        <nav aria-label="Social links" data-testid="test-user-social-links">
+          <ul class="social-links">
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+          </ul>
+        </nav>
+
+        <section aria-labelledby="hobbies-title">
+          <h3 id="hobbies-title">Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Football</li>
+            <li>Photography</li>
+            <li>Cooking</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="dislikes-title">
+          <h3 id="dislikes-title">Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Procrastination</li>
+            <li>Slow wifi</li>
+            <li></li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
